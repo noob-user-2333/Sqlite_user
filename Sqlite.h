@@ -5,23 +5,7 @@
 #ifndef WEBSPIDER_SQLITE_H
 #define WEBSPIDER_SQLITE_H
 
-#include <string>
-#include <utility>
-#include <stdexcept>
-#include "sqlite3.h"
-
-
-struct SqliteData final {
-    int depth = 0;
-    int col_count = 0;
-    char** field_name = nullptr;
-    char** values = nullptr;
-    SqliteData() = default;
-    ~SqliteData(){
-
-    }
-};
-
+#include "SqliteData.h"
 
 class Sqlite final{
 private:
